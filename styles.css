@@ -19,7 +19,7 @@ body {
 }
 
 h1 {
-    margin-bottom: 20px;
+    margin: 0 50px 20px;
 }
 
 p {
@@ -41,10 +41,11 @@ main {
 }
 
 #image {
-    margin-right: 50px;
+    margin: 0 50px;
 }
 main img {
     max-width: 400px;
+    width: 100%;
     border: 5px solid #fff;
     border-radius: 5px;
 }
@@ -53,8 +54,17 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 0 50px;
 }
 
 footer div {
     margin: 0 10px;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+@media screen and (max-width: 860px) {
+
 }
