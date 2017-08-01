@@ -3,27 +3,34 @@
     margin: 0;
 }
 
-
-
 html, body {
     height: 100%;
+    width: 100%;
     font-family: "Helvetica-Neue", Helvetica, sans-serif;
 }
 
 body {
     background: #ed4853;
-    /* height: 100vh; */
     color: #fff;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.wrapper {
+    max-width: 1100px;
     margin: 0 auto;
-    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 h1 {
-    margin: 0 50px 20px;
-}
-
-p {
-    margin-bottom: 10px;
+    font-size: 26px;
 }
 
 a {
@@ -36,14 +43,11 @@ main {
     align-content: center;
     align-items: center;
     justify-content: center;
-    padding: 60px 0;
     flex-wrap: wrap;
 }
 
-#image {
-    margin: 0 50px;
-}
 main img {
+    display: block;
     max-width: 400px;
     width: 100%;
     border: 5px solid #fff;
@@ -54,17 +58,38 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 0 50px;
-}
-
-footer div {
-    margin: 0 10px;
-}
-
-footer p {
     font-size: 12px;
 }
 
-@media screen and (max-width: 860px) {
+footer p, main img, h1 {
+    margin: 0 30px;
+}
 
+@media screen and (max-width: 1065px) {
+    main img {
+        margin-bottom: 30px;
+    }
+
+    footer p {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    body {
+         min-width: auto;
+         min-height: auto;
+    }
+    .wrapper {
+        margin: 20px;
+        position: static;
+    }
+
+    h1 {
+        margin: 0 0 30px;
+    }
+
+    footer p {
+        margin: 0 0 10px;
+    }
 }
