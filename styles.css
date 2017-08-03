@@ -12,21 +12,29 @@ html, body {
 body {
     background: #ed4853;
     color: #fff;
-    min-width: 100%;
-    min-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+img {
+    display: block;
 }
 
 .wrapper {
     max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    width: 100%;
+    margin: 20px auto;
 }
 
 h1 {
@@ -38,58 +46,70 @@ a {
 }
 
 main {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     justify-content: center;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 20px 70px;
 }
 
-main img {
-    display: block;
+.img-screenshot {
     max-width: 400px;
     width: 100%;
     border: 5px solid #fff;
     border-radius: 5px;
 }
 
-footer {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    font-size: 12px;
+.main-link {
+    display: block;
+    margin-top: 20px;
 }
 
-footer p, main img, h1 {
+footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-size: 12px;
+    margin: 0 20px;
+}
+
+main div, .img-screenshot {
     margin: 0 30px;
 }
 
-@media screen and (max-width: 1065px) {
-    main img {
+@media screen and (max-width: 1070px) {
+    main {
         margin-bottom: 30px;
+    }
+    main div {
+        margin: 10px 0;
+    }
+
+    body {
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
     }
 
     footer p {
         margin-bottom: 10px;
-    }
-}
-
-@media screen and (max-width: 430px) {
-    body {
-         min-width: auto;
-         min-height: auto;
-    }
-    .wrapper {
-        margin: 20px;
-        position: static;
-    }
-
-    h1 {
-        margin: 0 0 30px;
-    }
-
-    footer p {
-        margin: 0 0 10px;
     }
 }
