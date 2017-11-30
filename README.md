@@ -1,4 +1,4 @@
-![logo](img/iPad-Screenshot-0.png)
+<img src="img/iPad-Screenshot-0.png" alt="Sticker pack" width="400">
 
 # Website for Melonade Stickers Pack for iMessage
 
