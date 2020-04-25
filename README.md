@@ -16,4 +16,4 @@ Have fun chatting with this sticker pack.
 
 ---
 
-Copyright &copy; 2017 Melonade
+Copyright &copy; 2020 Melonade
